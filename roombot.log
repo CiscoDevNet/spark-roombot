@@ -1,0 +1,181 @@
+2016-03-21 22:19:31,552:INFO:Refresh token exchange successful
+2016-03-21 22:19:45,801:INFO:Refresh token exchange successful
+2016-03-21 22:21:43,953:INFO:Refresh token exchange successful
+2016-03-21 22:21:54,675:INFO:Refresh token exchange successful
+2016-03-21 22:22:44,788:INFO:Refresh token exchange successful
+2016-03-21 22:22:44,788:INFO:Refresh token exchange successful
+2016-03-21 22:23:12,701:INFO:Refresh token exchange successful
+2016-03-21 22:24:02,702:INFO:Refresh token exchange successful
+2016-03-21 22:25:49,920:INFO:Refresh token exchange successful
+2016-03-21 22:27:36,691:INFO:Refresh token exchange successful
+2016-03-21 22:28:07,836:INFO:Refresh token exchange successful
+2016-03-21 22:28:59,229:INFO:Refresh token exchange successful
+2016-03-21 22:29:17,820:INFO:Refresh token exchange successful
+2016-03-21 22:30:11,517:INFO:Refresh token exchange successful
+2016-03-21 22:30:11,517:INFO:Refresh token exchange successful
+2016-03-21 22:32:25,957:INFO:Refresh token exchange successful
+2016-03-21 22:32:25,957:INFO:Refresh token exchange successful
+2016-03-21 22:32:25,957:INFO:Refresh token exchange successful
+2016-03-21 22:32:25,957:INFO:Refresh token exchange successful
+2016-03-21 22:32:25,957:INFO:Refresh token exchange successful
+2016-03-21 22:33:19,505:INFO:Refresh token exchange successful
+2016-03-21 22:34:17,351:INFO:Refresh token exchange successful
+2016-03-21 22:34:17,607:INFO:Refresh token exchange successful
+2016-03-21 22:38:14,344:INFO:Refresh token exchange successful
+2016-03-21 22:38:14,654:INFO:Refresh token exchange successful
+2016-03-21 22:41:37,180:INFO:Refresh token exchange successful
+2016-03-21 22:41:37,520:INFO:Refresh token exchange successful
+2016-03-21 22:44:40,947:INFO:Refresh token exchange successful
+2016-03-21 22:44:41,214:INFO:Refresh token exchange successful
+2016-03-21 22:45:10,397:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-21 22:45:10,867:INFO:POST /memberships succeeded
+2016-03-21 22:46:37,317:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-21 22:46:37,318:WARNING:User is blacklisted
+2016-03-21 22:58:07,985:INFO:Refresh token exchange successful
+2016-03-21 22:58:07,987:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-21 22:58:08,002:WARNING:User is blacklisted
+2016-03-21 22:59:01,117:INFO:Refresh token exchange successful
+2016-03-21 22:59:01,120:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-21 22:59:01,709:INFO:POST /memberships succeeded
+2016-03-21 23:00:12,212:INFO:Refresh token exchange successful
+2016-03-21 23:00:12,212:INFO:Refresh token exchange successful
+2016-03-21 23:00:12,215:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf31
+2016-03-21 23:00:12,215:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf31
+2016-03-21 23:00:12,216:WARNING:Room is not whitelisted
+2016-03-21 23:00:12,216:WARNING:Room is not whitelisted
+2016-03-21 23:01:22,411:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf31
+2016-03-21 23:01:22,411:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf31
+2016-03-21 23:01:22,412:WARNING:Room is not whitelisted
+2016-03-21 23:01:22,412:WARNING:Room is not whitelisted
+2016-03-22 18:29:59,910:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:29:59,910:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:30:00,659:INFO:POST /memberships succeeded
+2016-03-22 18:30:00,659:INFO:POST /memberships succeeded
+2016-03-22 18:31:44,373:INFO:Refresh token exchange successful
+2016-03-22 18:31:44,373:INFO:Refresh token exchange successful
+2016-03-22 18:31:44,376:INFO:adduser: user= room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:31:44,376:INFO:adduser: user= room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:31:44,376:WARNING:Invalid email address
+2016-03-22 18:31:44,376:WARNING:Invalid email address
+2016-03-22 18:43:25,403:INFO:Refresh token exchange successful
+2016-03-22 18:43:25,406:INFO:adduser: user= room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:43:25,422:WARNING:Invalid email address
+2016-03-22 18:44:07,935:INFO:Refresh token exchange successful
+2016-03-22 18:44:07,938:INFO:adduser: user= room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:44:07,954:WARNING:Invalid email address
+2016-03-22 18:44:26,128:INFO:adduser: user= room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:44:26,128:WARNING:Invalid email address
+2016-03-22 18:45:52,151:INFO:adduser: user= room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:45:52,151:WARNING:Invalid email address
+2016-03-22 18:51:58,973:INFO:adduser: user= room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:51:58,973:WARNING:Invalid email address
+2016-03-22 18:52:12,475:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:52:13,092:INFO:POST /memberships succeeded
+2016-03-22 18:53:26,291:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:53:26,291:WARNING:User is blacklisted
+2016-03-22 18:56:17,216:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:56:17,216:WARNING:User is blacklisted
+2016-03-22 18:57:54,077:INFO:Refresh token exchange successful
+2016-03-22 18:57:54,079:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 18:57:54,548:INFO:POST /memberships succeeded
+2016-03-22 19:13:36,039:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 19:13:36,524:INFO:POST /memberships succeeded
+2016-03-22 19:13:37,314:INFO:adduser: user=dkstaudt@gmail.com room=4fe94610-f061-11e5-b8ce-113f8dfc14be
+2016-03-22 19:13:37,314:WARNING:Room is not whitelisted
+2016-03-22 19:14:17,816:INFO:adduser: user=dkstaudt@gmail.com room=4fe94610-f061-11e5-b8ce-113f8dfc14be
+2016-03-22 19:14:18,190:INFO:POST /memberships succeeded
+2016-03-22 19:14:35,325:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 19:14:37,062:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 19:26:25,237:INFO:Refresh token exchange successful
+2016-03-22 19:26:25,240:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 19:26:25,669:INFO:POST /memberships succeeded
+2016-03-22 19:28:03,012:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 19:28:03,448:INFO:POST /memberships succeeded
+2016-03-22 19:28:50,913:INFO:Refresh token exchange successful
+2016-03-22 19:29:01,998:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 19:29:02,455:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 19:29:56,998:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 19:29:57,367:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 19:31:36,497:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 19:31:37,030:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 20:51:30,540:INFO:Refresh token exchange successful
+2016-03-22 20:51:30,543:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 20:51:31,102:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 20:55:49,284:INFO:Refresh token exchange successful
+2016-03-22 20:55:49,286:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 20:55:49,617:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 21:00:46,534:INFO:adduser: user=dkstaudt 1@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 21:00:46,534:WARNING:Invalid email address
+2016-03-22 21:11:27,561:INFO:Refresh token exchange successful
+2016-03-22 21:11:27,564:INFO:adduser: user=dkstaudt(1)@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 21:11:27,887:WARNING:POST /memberships returned Unexpected response
+2016-03-22 21:15:35,340:INFO:adduser: user=dkstaudt(1)@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 21:15:35,734:WARNING:POST /memberships returned Unexpected response
+2016-03-22 21:16:18,048:INFO:adduser: user=dkstaudt(1)@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 21:16:18,482:WARNING:POST /memberships returned Unexpected response
+2016-03-22 21:16:25,385:INFO:Refresh token exchange successful
+2016-03-22 21:16:25,388:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 21:16:25,667:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 21:20:19,900:INFO:adduser: user=dkstaudt(1)@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 21:20:20,327:WARNING:POST /memberships returned Unexpected response
+2016-03-22 21:20:32,997:INFO:adduser: user=dkstaudt+1@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 21:20:34,078:INFO:POST /memberships succeeded
+2016-03-22 21:52:19,243:INFO:Refresh token exchange successful
+2016-03-22 21:52:19,246:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 21:52:19,785:INFO:POST /memberships succeeded
+2016-03-22 22:51:37,839:INFO:Refresh token exchange successful
+2016-03-22 22:51:37,842:INFO:adduser: user= room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 22:51:37,858:WARNING:Invalid email address
+2016-03-22 22:51:47,327:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 22:51:47,628:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 22:57:56,515:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 22:57:57,887:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 22:59:27,498:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 22:59:27,748:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 23:02:28,081:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 23:02:28,279:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 23:02:48,213:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 23:02:48,480:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 23:02:59,415:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 23:02:59,785:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 23:04:30,865:INFO:adduser: user=dstaudt@cisco.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 23:04:31,136:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-22 23:05:54,543:INFO:adduser: user=dstaudt@cisco.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-22 23:05:54,804:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-25 18:47:39,103:INFO:adduser: user=dkstaudt 2@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-25 18:47:39,103:WARNING:Invalid email address
+2016-03-25 18:48:09,058:INFO:adduser: user=dkstaudt+2@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-25 18:48:10,976:INFO:POST /memberships succeeded
+2016-03-26 19:04:04,698:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-26 19:04:05,723:INFO:POST /memberships succeeded
+2016-03-26 20:13:47,107:INFO:Refresh token exchange successful
+2016-03-26 20:18:44,947:INFO:Refresh token exchange successful
+2016-03-26 20:18:44,949:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-26 20:18:45,717:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-26 20:20:52,243:INFO:adduser: user=[object HTMLInputElement] room=4fe94610-f061-11e5-b8ce-113f8dfc14be
+2016-03-26 20:20:52,244:WARNING:Invalid email address
+2016-03-26 20:21:34,842:INFO:adduser: user=dkstaudt@gmail.com room=4fe94610-f061-11e5-b8ce-113f8dfc14be
+2016-03-26 20:21:35,340:INFO:POST /memberships succeeded
+2016-03-26 20:21:37,771:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-26 20:21:38,081:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-26 20:21:39,002:INFO:adduser: user=dkstaudt@gmail.com room=4fe94610-f061-11e5-b8ce-113f8dfc14be
+2016-03-26 20:21:39,304:WARNING:POST /memberships returned User cannot be added to the room
+2016-03-26 20:25:40,181:INFO:adduser: user=dkstaudt@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-26 20:25:41,248:INFO:POST /memberships succeeded
+2016-03-26 21:02:01,834:INFO:adduser: user=dstaudt@usa.net room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-26 21:02:02,389:INFO:POST /memberships succeeded
+2016-03-28 14:35:45,107:INFO:Refresh token exchange successful
+2016-03-28 14:35:45,109:INFO:adduser: user=denapom11@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-28 14:35:46,366:INFO:POST /memberships succeeded
+2016-03-28 14:35:47,170:INFO:adduser: user=denapom11@gmail.com room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-03-28 14:35:47,673:WARNING:POST /memberships returned User cannot be added to the room
+2016-04-07 19:49:48,105:INFO:Refresh token exchange successful
+2016-04-07 19:49:48,146:INFO:adduser: user= room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-04-07 19:49:48,153:INFO:adduser: user= room=4fe94610-f061-11e5-b8ce-113f8dfc14be
+2016-04-07 19:49:48,168:WARNING:Invalid email address
+2016-04-07 19:49:48,174:WARNING:Invalid email address
+2016-04-07 19:49:48,856:INFO:Refresh token exchange successful
+2016-04-07 19:49:48,859:INFO:adduser: user= room=4fe94610-f061-11e5-b8ce-113f8dfc14be
+2016-04-07 19:49:48,859:INFO:adduser: user= room=c4699750-db27-11e5-b4f4-fbf227cffaf3
+2016-04-07 19:49:48,883:WARNING:Invalid email address
+2016-04-07 19:49:48,889:WARNING:Invalid email address

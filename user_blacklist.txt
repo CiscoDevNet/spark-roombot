@@ -1,0 +1,4 @@
+# List of users which will NOT be operated on, e.g.:
+#blacklisted@example.com
+
+
