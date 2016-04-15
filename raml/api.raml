@@ -1,0 +1,81 @@
+#%RAML 1.0
+title: spark-roombot
+version: v1
+baseUri: https://devnet-tools.com/roombot/
+mediaType: application/json
+protocols:
+  - HTTPS
+/isUser:
+  get:
+    queryParameters:
+      user:
+        description: user email
+        example: user@example.com
+        required: true
+        type:
+          - string
+    responses:
+      200:
+        displayName: OK
+        body:
+          application/json:
+            example: |
+              { "status": "Success", "return": true }
+      400:
+        displayName: Invalid email
+        body:
+          application/json:
+            example: |
+              { "status": "Invalid email" }
+      401:
+        description: Unauthorized
+        body:
+          application/json:
+            example: |
+              { "status": "Unauthorized"}
+/addUser:
+  post:
+    queryParameters:
+      user:
+        description: user email
+        example: user@example.com
+        required: true
+        type:
+          - string
+      room:
+        description: room ID
+        example: c4699750-db27-11e5-b4f4-fbf337cffaf3
+        required: true
+        type:
+          - string
+    responses:
+      200:
+        displayName: OK
+        body:
+          application/json:
+            example: |
+              { "status": "Success"}
+      400:
+        description: Invalid request
+        body:
+          application/json:
+            example: |
+              { "status": "Invalid request"}
+      401:
+        description: Unauthorized
+        body:
+          application/json:
+            example: |
+              { "status": "Unauthorized"}
+      404:
+        description: Invalid room requested
+        body:
+          application/json:
+            example: |
+              { "status": "Invalid room requested"}
+      409:
+        description: User is already a member of requested room
+        body:
+          application/json:
+            example: |
+              { "status": "User is already a member of requested room"}
