@@ -47,7 +47,7 @@
         document.getElementById(resTarget).innerHTML= JSON.parse(xhttp.responseText).status
       }
     }
-    xhttp.open('POST','https://devnet-tools.com/addUser?user='+encodeURIComponent(user)+'&room='+room);
+    xhttp.open('POST','https://devnet-tools.com/roombot/addUser?user='+encodeURIComponent(user)+'&room='+room);
     xhttp.send();
   }
 </script>
