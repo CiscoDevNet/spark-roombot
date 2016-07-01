@@ -6,9 +6,7 @@ from validate_email import validate_email
 import logging
 from logging.handlers import RotatingFileHandler
 from logging import Formatter
-import time
-from threading import Timer
-from flask.ext.cors import CORS
+from flask_cors import CORS
 import os
 
 application = Flask(__name__)
@@ -94,7 +92,7 @@ def userBlacklisted(userId):
     blacklisted = False
     with open( os.path.join(curDir, 'user_blacklist.txt'), 'r' ) as inFile:
         for line in inFile:
-            if (userId in line) and (line[0] != '#'):
+            if (userId == line.strip()):
                 blacklisted = True
     return blacklisted
 
@@ -102,37 +100,16 @@ def roomWhitelisted(roomId):
     whitelisted = False
     with open( os.path.join(curDir,'room_whitelist.txt'), 'r' ) as inFile:
         for line in inFile:
-            if (roomId in line) and (line[0] != '#'):
+            if (roomId == line.strip()):
                 whitelisted = True
     return whitelisted
 
-def refreshTokens():
+def readToken():
     global accessToken
     accessToken = ''
     config = configparser.ConfigParser()
     config.read( os.path.join(curDir,'secrets.ini') )
-    refreshToken = config.get('User', 'refreshToken')
-    clientId = config.get('Spark App Secrets', 'clientId')
-    clientSecret = config.get('Spark App Secrets', 'clientSecret')
-
-    payload = { 'grant_type': 'refresh_token',
-                'client_id': clientId,
-                'client_secret': clientSecret,
-                'refresh_token': refreshToken }
-
-    header = {'Content-Type': 'application/json'}
-
-    resp = requests.post('https://api.ciscospark.com/v1/access_token', headers=header, data=json.dumps(payload) )
-    if resp.status_code != 200:
-        log.error('Refresh token exchange failed')
-        return
-
-    respJson = resp.json()
-    accessToken = respJson['access_token']
-    tokenExpires = respJson['expires_in']
-    log.info('Refresh token exchange successful')
-
-    Timer(tokenExpires-(60*60), refreshTokens).start()
+    accessToken = config.get('User', 'accessToken')
 
 curDir = os.path.dirname(__file__)
 log = logging.getLogger('rotating log')
@@ -141,7 +118,7 @@ handler = RotatingFileHandler(os.path.join(curDir, 'roombot.log'), maxBytes=1048
 handler.setFormatter(Formatter('%(asctime)s:%(levelname)s:%(message)s') )
 log.addHandler(handler)
 
-refreshTokens()
+readToken()
 
 if __name__ == '__main__':
-    application.run(host='0.0.0.0',debug=True)
+    application.run(host='0.0.0.0',port=5000,debug=True)
