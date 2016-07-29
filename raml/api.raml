@@ -16,13 +16,13 @@ protocols:
           - string
     responses:
       200:
-        displayName: OK
+        description: OK
         body:
           application/json:
             example: |
               { "status": "Success", "return": true }
       400:
-        displayName: Invalid email
+        description: Invalid email
         body:
           application/json:
             example: |
@@ -50,7 +50,7 @@ protocols:
           - string
     responses:
       200:
-        displayName: OK
+        description: OK
         body:
           application/json:
             example: |
