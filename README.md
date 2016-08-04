@@ -5,3 +5,4 @@ Dependencies:
 * flask
 * validate_email
 * flask-cors
+test
