@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: devnet-chatbot-roomadd
-        image: trxuk/devnet-spark-roomaddbot
+        image: trxuk/devnet-spark-roomaddbot:beta2.0
         ports:
         - containerPort: 80
         volumeMounts:
@@ -29,4 +29,3 @@ spec:
                 path: room_whitelist.txt
               - key: user.blacklist
                 path: user_blacklist.txt
-                
