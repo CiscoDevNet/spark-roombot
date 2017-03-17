@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: devnet-chatbot-roomadd
+  namespace: devnet-services-test
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: devnet-chatbot-roomadd
+    spec:
+      containers:
+      - name: devnet-chatbot-roomadd
+        image: trxuk/devnet-spark-roomaddbot
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: app-config
+          mountPath: /app/config
+      volumes:
+        - name: app-config
+          configMap:
+              name: devnet-chatbot-roomadd-cfgmap
+              items:
+              - key: spark.secrets
+                path: secrets.ini
+              - key: room.whitelist
+                path: room_whitelist.txt
+              - key: user.blacklist
+                path: user_blacklist.txt
+                

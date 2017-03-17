@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: devnet-chatbot-roomadd-ingress
+  namespace: devnet-services-test
+  annotations:
+    kubernetes.io/tls-acme: "true"
+    kubernetes.io/ingress.class: "gce"
+    dns.alpha.kubernetes.io/external: "true"
+spec:
+  tls:
+  - hosts:
+    - dn-chatbot-roomadd.ciscoplatform.com
+    secretName: chatbot-roomadd-demo-secret
+  rules:
+  - host: dn-chatbot-roomadd.ciscoplatform.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: devnet-chatbot-roomadd
+          servicePort: 80
