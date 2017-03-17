@@ -1,5 +1,0 @@
-# List of rooms which the bot is allowed to perform operations on, e.g.:
-#c4699750-db27-11e5-b4f4-0abc030ad0c3
-
-c4699750-db27-11e5-b4f4-fbf227cffaf3
-4fe94610-f061-11e5-b8ce-113f8dfc14be
