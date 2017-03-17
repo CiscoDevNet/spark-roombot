@@ -90,7 +90,7 @@ def addUser():
 
 def userBlacklisted(userId):
     blacklisted = False
-    with open( os.path.join(curDir, 'user_blacklist.txt'), 'r' ) as inFile:
+    with open( os.path.join(curDir,'/config/','user_blacklist.txt'), 'r' ) as inFile:
         for line in inFile:
             if (userId == line.strip()):
                 blacklisted = True
@@ -98,7 +98,7 @@ def userBlacklisted(userId):
 
 def roomWhitelisted(roomId):
     whitelisted = False
-    with open( os.path.join(curDir,'room_whitelist.txt'), 'r' ) as inFile:
+    with open( os.path.join(curDir,'/config/','room_whitelist.txt'), 'r' ) as inFile:
         for line in inFile:
             if (roomId == line.strip()):
                 whitelisted = True
@@ -108,15 +108,26 @@ def readToken():
     global accessToken
     accessToken = ''
     config = configparser.ConfigParser()
-    config.read( os.path.join(curDir,'secrets.ini') )
+    config.read( os.path.join(curDir,'/config/','secrets.ini') )
     accessToken = config.get('User', 'accessToken')
 
+# File logging handler
 curDir = os.path.dirname(__file__)
 log = logging.getLogger('rotating log')
 log.setLevel(logging.INFO)
 handler = RotatingFileHandler(os.path.join(curDir, 'roombot.log'), maxBytes=1048576, backupCount = 10)
 handler.setFormatter(Formatter('%(asctime)s:%(levelname)s:%(message)s') )
+
+# Stdout (Kubernetes) handler
+stdlog = logging.StreamHandler(sys.stdout)
+stdlog.setLevel(logging.INFO)
+stdlogformatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+stdlog.setFormatter(stdlogformatter)
+
+# Start logging
 log.addHandler(handler)
+log.addHandler(stdlogformatter)
+
 
 readToken()
 
