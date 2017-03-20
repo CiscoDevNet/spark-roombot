@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: devnet-chatbot-roomadd
-        image: trxuk/devnet-spark-roomaddbot:beta8.0
+        image: trxuk/devnet-spark-roomaddbot:11.0
         ports:
         - containerPort: 80
         volumeMounts:

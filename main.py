@@ -60,7 +60,7 @@ def addUser():
         log.warn('Room is not whitelisted')
         return ( '{"status": "Room is not whitelisted"}', 403,)
 
-    header = { 'Content-Type': 'app/json', 'Authorization': 'Bearer '+accessToken }
+    header = { 'Content-Type': 'application/json', 'Authorization': 'Bearer '+accessToken }
     body = { 'roomId': roomId, 'personEmail': userId }
 
     resp = requests.post('https://api.ciscospark.com/v1/memberships', headers=header, data=json.dumps(body) )
@@ -91,7 +91,7 @@ def addUser():
 
 def userBlacklisted(userId):
     blacklisted = False
-    with open( os.path.join(curDir,'/config/','user_blacklist.txt'), 'r' ) as inFile:
+    with open('/app/config/user_blacklist.txt', 'r' ) as inFile:
         for line in inFile:
             if (userId == line.strip()):
                 blacklisted = True
@@ -99,7 +99,7 @@ def userBlacklisted(userId):
 
 def roomWhitelisted(roomId):
     whitelisted = False
-    with open( os.path.join(curDir,'/config/','room_whitelist.txt'), 'r' ) as inFile:
+    with open('/app/config/room_whitelist.txt', 'r' ) as inFile:
         for line in inFile:
             if (roomId == line.strip()):
                 whitelisted = True
@@ -109,25 +109,18 @@ def readToken():
     global accessToken
     accessToken = ''
     config = configparser.ConfigParser()
-    config.read( os.path.join(curDir,'/config/','secrets.ini') )
-    accessToken = config.get('User', 'accessToken')
+    config.read('/app/config/secrets.ini')
+    accessToken = config['User']['accessToken']
 
 # File logging handler
 curDir = os.path.dirname(__file__)
 log = logging.getLogger('rotating log')
 log.setLevel(logging.INFO)
-handler = RotatingFileHandler(os.path.join(curDir, 'roombot.log'), maxBytes=1048576, backupCount = 10)
+handler = RotatingFileHandler('/app/roombot.log', maxBytes=1048576, backupCount = 10)
 handler.setFormatter(Formatter('%(asctime)s:%(levelname)s:%(message)s') )
-
-# Stdout (Kubernetes) handler
-stdlog = logging.StreamHandler(sys.stdout)
-stdlog.setLevel(logging.INFO)
-stdlogformatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-stdlog.setFormatter(stdlogformatter)
 
 # Start logging
 log.addHandler(handler)
-log.addHandler(stdlogformatter)
 
 
 readToken()

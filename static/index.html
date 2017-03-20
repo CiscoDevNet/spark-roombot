@@ -37,7 +37,7 @@
         }
       }
     }
-    xhttp.open('GET','https://dn-chatbot-roomadd.ciscoplatform.com/roombot/isUser?user='+encodeURIComponent(user))
+    xhttp.open('GET','https://dn-chatbot-roomadd.ciscoplatform.com/isUser?user='+encodeURIComponent(user))
     xhttp.send()
   }
   function addUser(user,room,resTarget) {
@@ -47,7 +47,7 @@
         document.getElementById(resTarget).innerHTML= JSON.parse(xhttp.responseText).status
       }
     }
-    xhttp.open('POST','https://dn-chatbot-roomadd.ciscoplatform.com/roombot/addUser?user='+encodeURIComponent(user)+'&room='+room);
+    xhttp.open('POST','https://dn-chatbot-roomadd.ciscoplatform.com/addUser?user='+encodeURIComponent(user)+'&room='+room);
     xhttp.send();
   }
 </script>
