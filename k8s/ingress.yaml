@@ -18,5 +18,9 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: devnet-chatbot-roomadd
+          serviceName: devnet-chatbot-roomadd-svc
+          servicePort: 80
+      - path: /*
+        backend:
+          serviceName: devnet-chatbot-roomadd-svc
           servicePort: 80

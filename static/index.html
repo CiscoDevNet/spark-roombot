@@ -2,7 +2,7 @@
 <html>
 
 <style>
-@font-face{font-family:"CiscoSans TT Bold";src:local("CiscoSans TT Bold"),url(CiscoSansTTBold.ttf)}
+@font-face{font-family:"CiscoSans TT Bold";src:local("CiscoSans TT Bold"),url(/static/CiscoSansTTBold.ttf)}
 .buttonClass {
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -37,7 +37,7 @@
         }
       }
     }
-    xhttp.open('GET','https://devnet-tools.com/roombot/isUser?user='+encodeURIComponent(user))
+    xhttp.open('GET','https://dn-chatbot-roomadd.ciscoplatform.com/roombot/isUser?user='+encodeURIComponent(user))
     xhttp.send()
   }
   function addUser(user,room,resTarget) {
@@ -47,7 +47,7 @@
         document.getElementById(resTarget).innerHTML= JSON.parse(xhttp.responseText).status
       }
     }
-    xhttp.open('POST','https://devnet-tools.com/roombot/addUser?user='+encodeURIComponent(user)+'&room='+room);
+    xhttp.open('POST','https://dn-chatbot-roomadd.ciscoplatform.com/roombot/addUser?user='+encodeURIComponent(user)+'&room='+room);
     xhttp.send();
   }
 </script>

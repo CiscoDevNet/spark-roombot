@@ -8,11 +8,12 @@ from logging.handlers import RotatingFileHandler
 from logging import Formatter
 from flask_cors import CORS
 import os
+import sys
 
-application = Flask(__name__)
-CORS(application)
+app = Flask(__name__)
+CORS(app)
 
-@application.route('/isUser', methods=['GET'])
+@app.route('/isUser', methods=['GET'])
 def isUser():
     userId = request.args['user']
 
@@ -40,7 +41,7 @@ def isUser():
 
     return (payload,respCode,)
 
-@application.route('/addUser', methods=['POST'])
+@app.route('/addUser', methods=['POST'])
 def addUser():
     roomId = request.args['room']
     userId = request.args['user']
@@ -59,7 +60,7 @@ def addUser():
         log.warn('Room is not whitelisted')
         return ( '{"status": "Room is not whitelisted"}', 403,)
 
-    header = { 'Content-Type': 'application/json', 'Authorization': 'Bearer '+accessToken }
+    header = { 'Content-Type': 'app/json', 'Authorization': 'Bearer '+accessToken }
     body = { 'roomId': roomId, 'personEmail': userId }
 
     resp = requests.post('https://api.ciscospark.com/v1/memberships', headers=header, data=json.dumps(body) )
@@ -132,4 +133,4 @@ log.addHandler(stdlogformatter)
 readToken()
 
 if __name__ == '__main__':
-    application.run(host='0.0.0.0',port=5000,debug=True)
+    app.run(host='0.0.0.0',port=80,debug=True)
