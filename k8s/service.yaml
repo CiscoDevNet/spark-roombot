@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: devnet-chatbot-roomadd-svc
-  namespace: devnet-services-test
+  namespace: devnet-tools-prod
 spec:
   ports:
   - port: 80

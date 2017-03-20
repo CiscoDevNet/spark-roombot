@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
     name: devnet-chatbot-roomadd-cfgmap
-    namespace: devnet-services-test
+    namespace: devnet-tools-prod
 data:
   room.whitelist: |-
     # List of rooms which the bot is allowed to perform operations on, e.g.:
