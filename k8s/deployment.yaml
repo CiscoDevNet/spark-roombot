@@ -13,6 +13,12 @@ spec:
       containers:
       - name: devnet-chatbot-roomadd
         image: trxuk/devnet-spark-roomaddbot:11.0
+        livenessProbe:
+          httpGet:
+            path: /isUser?user=matjohn2%40cisco.com
+            port: 80
+          initialDelaySeconds: 10
+          timeoutSeconds: 5
         ports:
         - containerPort: 80
         volumeMounts:
